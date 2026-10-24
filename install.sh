@@ -6,3 +6,6 @@ mkdir -p ~/.config/rofi/ && cp -r ~/wawarice/rofi ~/.config/
 killall -SIGUSR2 waybar
 
 ~/wawarice/gtkinstall.sh
+
+rm -rf ~/flat-remix-gtk
+rm -rf ~/wawarice
