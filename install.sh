@@ -3,3 +3,4 @@ mkdir -p ~/.config/niri/ && cp -r ~/wawarice/niri ~/.config/
 mkdir -p ~/.config/waybar/ && cp -r ~/wawarice/waybar ~/.config/
 mkdir -p ~/.config/rofi/ && cp -r ~/wawarice/rofi ~/.config/
 sudo pacman -S python-requests
+killall -SIGUSR2 waybar
