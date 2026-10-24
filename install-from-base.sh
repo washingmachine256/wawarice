@@ -6,5 +6,11 @@ mkdir -p ~/.config/waybar/ && cp -r ~/wawarice/waybar ~/.config/
 mkdir -p ~/.config/rofi/ && cp -r ~/wawarice/rofi ~/.config/
 killall -SIGUSR2 waybar
 
-git clone https://www.github.com/daniruiz/flat-remix-gtk/tree/master/themes/Flat-Remix-GTK-Blue-Dark ~/.themes/
+git clone --no-checkout https://www.github.com/daniruiz/flat-remix-gtk/
+cd ~/flat-remix-gtk
+git sparce-checkout init --cone
+git sparse-checkout set themes/Flat-Remix-GTK-Blue-Dark
+git checkout master
+cp -r ~/.themes/
+
 gsettings set org.gnome.desktop.interface gtk-theme "Flat-Remix-GTK-Blue-Dark"
