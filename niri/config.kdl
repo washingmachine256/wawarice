@@ -401,7 +401,7 @@ binds {
     Mod+WheelScrollUp hotkey-overlay-title="Focus Left" cooldown-ms=150 { focus-column-left; }
     Mod+Alt+S { screenshot-screen; }
     Mod+Shift+S { screenshot; }
-    Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
+    Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun" "-show-icons"; }
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+X { spawn "pear-desktop"; }
     Mod+B hotkey-overlay-title="open browser: floorp" { spawn "floorp"; }
