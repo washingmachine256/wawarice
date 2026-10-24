@@ -1,0 +1,13 @@
+
+configuration {
+font: "JetBrainsMono Nerd Font SemiBold 13";
+}
+
+element-text {
+font: "JetBrainsMono Nerd Font SemiBold 11";
+}
+
+
+//@theme "~/.config/rofi/themes/saint-rofi.rasi"
+//@theme "/usr/share/rofi/themes/purple.rasi"
+
