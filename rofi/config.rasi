@@ -166,3 +166,4 @@ configuration {
       sorting-method:    "name";
   }
 }
+@theme "~/.config/rofi/theme.rasi"

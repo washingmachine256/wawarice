@@ -1,0 +1,201 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 2.0.0
+ **/
+* {
+    alternate-urgent-background: rgba ( 32, 29, 42, 100 % );
+    alternate-active-foreground: rgba ( 153, 146, 176, 100 % );
+    selected-active-background:  rgba ( 110, 101, 139, 100 % );
+    color9:                      rgba ( 219, 168, 255, 100 % );
+    selected-urgent-foreground:  Black;
+    background-alt:              var(color1);
+    selected:                    var(color12);
+    urgent:                      var(color13);
+    color11:                     rgba ( 75, 69, 95, 100 % );
+    color4:                      rgba ( 162, 134, 253, 100 % );
+    text-color:                  var(foreground);
+    normal-foreground:           rgba ( 153, 146, 176, 100 % );
+    color5:                      rgba ( 210, 148, 255, 100 % );
+    color12:                     rgba ( 110, 101, 139, 100 % );
+    background:                  White/90%;
+    color0:                      rgba ( 32, 29, 42, 100 % );
+    urgent-foreground:           rgba ( 153, 146, 176, 100 % );
+    text-selected:               var(background);
+    alternate-normal-foreground: rgba ( 153, 146, 176, 100 % );
+    active-background:           rgba ( 110, 101, 139, 100 % );
+    alternate-urgent-foreground: rgba ( 153, 146, 176, 100 % );
+    color13:                     rgba ( 220, 210, 254, 100 % );
+    selected-active-foreground:  Black;
+    color6:                      rgba ( 181, 160, 254, 100 % );
+    selected-normal-background:  rgba ( 110, 101, 139, 100 % );
+    color1:                      rgba ( 147, 117, 245, 100 % );
+    selected-urgent-background:  rgba ( 110, 101, 139, 100 % );
+    color7:                      rgba ( 153, 146, 176, 100 % );
+    color14:                     rgba ( 202, 128, 255, 100 % );
+    active:                      var(color11);
+    color2:                      rgba ( 210, 148, 255, 100 % );
+    normal-background:           rgba ( 32, 29, 42, 100 % );
+    background-color:            rgba ( 32, 29, 42, 100 % );
+    alternate-active-background: rgba ( 75, 69, 95, 100 % );
+    border-color:                var(selected);
+    foreground:                  rgba ( 153, 146, 176, 100 % );
+    color15:                     rgba ( 239, 235, 255, 100 % );
+    color8:                      rgba ( 98, 90, 124, 100 % );
+    alternate-normal-background: rgba ( 32, 29, 42, 100 % );
+    selected-normal-foreground:  Black;
+    active-foreground:           rgba ( 153, 146, 176, 100 % );
+    urgent-background:           rgba ( 220, 210, 254, 100 % );
+    color10:                     rgba ( 44, 40, 57, 100 % );
+    color3:                      rgba ( 236, 209, 255, 100 % );
+}
+window {
+    enabled:          true;
+    transparency:     "real";
+    cursor:           "default";
+    width:            40.0000% ;
+    fullscreen:       false;
+    location:         center;
+    anchor:           center;
+    background-color: rgba ( 26, 26, 26, 60 % );
+    border-radius:    0px ;
+    border:           2px ;
+    spacing:          0px ;
+}
+mainbox {
+    orientation:      vertical;
+    enabled:          true;
+    background-color: transparent;
+    children:         [ "inputbar","listbox" ];
+}
+inputbar {
+    padding:          8px ;
+    enabled:          true;
+    margin:           10px ;
+    orientation:      horizontal;
+    background-color: transparent;
+    border-radius:    0px ;
+    children:         [ "entry" ];
+}
+entry {
+    enabled:           true;
+    cursor:            text;
+    width:             100.0000% ;
+    padding:           8px ;
+    text-color:        inherit;
+    background-color:  transparent;
+    border-radius:     0px ;
+    placeholder-color: inherit;
+    placeholder:       "Search ";
+    expand:            true;
+}
+listbox {
+    padding:          0px 10px 10px ;
+    background-color: transparent;
+    orientation:      vertical;
+    spacing:          0px ;
+    children:         [ "message","listview" ];
+}
+listview {
+    enabled:          true;
+    fixed-columns:    true;
+    padding:          0px ;
+    scrollbar:        false;
+    fixed-height:     true;
+    cycle:            true;
+    reverse:          false;
+    lines:            7;
+    dynamic:          true;
+    layout:           vertical;
+    border:           0px ;
+    spacing:          0px ;
+    columns:          1;
+    background-color: transparent;
+}
+scrollbar {
+    padding:          0;
+    background-color: transparent;
+    handle-width:     2px ;
+    border:           0px ;
+    border-radius:    0px ;
+    handle-color:     var(active);
+}
+element {
+    padding:          8px ;
+    enabled:          true;
+    background-color: transparent;
+    cursor:           pointer;
+    spacing:          8px ;
+    border-radius:    0px ;
+}
+element normal.normal {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element normal.urgent {
+    background-color: var(urgent);
+    text-color:       var(foreground);
+}
+element normal.active {
+    background-color: var(active);
+    text-color:       var(foreground);
+}
+element selected.normal {
+    background-color: var(selected);
+    text-color:       var(background);
+}
+element selected.urgent {
+    background-color: var(urgent);
+    text-color:       var(text-selected);
+}
+element selected.active {
+    background-color: var(urgent);
+    text-color:       var(text-selected);
+}
+element alternate.normal {
+    background-color: transparent;
+    text-color:       inherit;
+}
+element alternate.urgent {
+    background-color: transparent;
+    text-color:       inherit;
+}
+element alternate.active {
+    background-color: transparent;
+    text-color:       inherit;
+}
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    vertical-align:   0.50;
+    horizontal-align: 0.00;
+    text-color:       inherit;
+}
+element-text selected {
+    background-color: var(active);
+    text-color:       var(foreground);
+}
+element-icon {
+    background-color: transparent;
+    size:             28px ;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+message {
+    background-color: var(background);
+    border:           0px ;
+}
+textbox {
+    padding:          8px ;
+    margin:           10px ;
+    background-color: var(active);
+    vertical-align:   0.50;
+    horizontal-align: 0.50;
+    border-radius:    0px ;
+    text-color:       var(foreground);
+}
+error-message {
+    padding:          8px ;
+    background-color: var(background);
+    border-radius:    0px ;
+    text-color:       var(foreground);
+}
