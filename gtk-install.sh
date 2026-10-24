@@ -1,6 +1,6 @@
 git clone --no-checkout https://www.github.com/daniruiz/flat-remix-gtk/
 cd ~/flat-remix-gtk
-git sparce-checkout init --cone
+git sparse-checkout init --cone
 git sparse-checkout set themes/Flat-Remix-GTK-Blue-Dark
 git checkout master
 mkdir ~/.themes/
