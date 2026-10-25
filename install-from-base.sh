@@ -6,5 +6,6 @@ mkdir -p ~/.config/waybar/ && cp -r ~/wawarice/waybar ~/.config/
 mkdir -p ~/.config/rofi/ && cp -r ~/wawarice/rofi ~/.config/
 
 ~/wawarice/gtk-install.sh
+~/wawarice/awww-enable.sh
 
 rm -rf ~/wawarice
