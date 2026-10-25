@@ -5,6 +5,9 @@ mkdir -p ~/.config/waybar/ && cp -r ~/wawarice/waybar ~/.config/
 mkdir -p ~/.config/rofi/ && cp -r ~/wawarice/rofi ~/.config/
 killall -SIGUSR2 waybar
 
+chmod +x ~/wawarice/gtk-install.sh
+chmod +x ~/wawarice/awww-enable.sh
+
 ~/wawarice/gtkinstall.sh
 ~/wawarice/awww-enable.sh
 

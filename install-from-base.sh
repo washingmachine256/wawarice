@@ -5,6 +5,9 @@ mkdir -p ~/.config/niri/ && cp -r ~/wawarice/niri ~/.config/
 mkdir -p ~/.config/waybar/ && cp -r ~/wawarice/waybar ~/.config/
 mkdir -p ~/.config/rofi/ && cp -r ~/wawarice/rofi ~/.config/
 
+chmod +x ~/wawarice/gtk-install.sh
+chmod +x ~/wawarice/awww-enable.sh
+
 ~/wawarice/gtk-install.sh
 ~/wawarice/awww-enable.sh
 
