@@ -7,5 +7,4 @@ mkdir -p ~/.config/rofi/ && cp -r ~/wawarice/rofi ~/.config/
 
 ~/wawarice/gtk-install.sh
 
-rm -rf ~/flat-remix-gtk
 rm -rf ~/wawarice

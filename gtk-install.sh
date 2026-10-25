@@ -8,3 +8,4 @@ cp -r ~/flat-remix-gtk/themes/Flat-Remix-GTK-Blue-Dark ~/.themes/
 
 gsettings set org.gnome.desktop.interface gtk-theme "Flat-Remix-GTK-Blue-Dark"
 
+rm -rf ~/flat-remix-gtk
