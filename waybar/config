@@ -7,7 +7,7 @@
     "margin-right": 10,
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/workspaces", "custom/weather"],
-    "modules-center": ["custom/spotify"],
+    "modules-center": [""],
     "modules-right": ["tray", "backlight", "pulseaudio", "clock"],
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -30,8 +30,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "<span color='#bf616a'> </span>{:%a %b %d}",
-        "format-alt": "<span color='#bf616a'> </span>{:%I:%M %p}",
+        "format": "<span color='#410870'> </span>{:%H:%M %d/%m/%y}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
     },
 
@@ -81,7 +80,7 @@
     },
 
     "custom/launcher": {
-        "format": " <span color='#6a92d7'>:3</span>",
+        "format": " <span color='#6a92d7'>:o</span>",
         "on-click": "rofi -show drun",
     },
 }
