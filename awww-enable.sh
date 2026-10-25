@@ -3,7 +3,7 @@ cd ~/awww
 git sparse-checkout init --no-cone
 git sparse-checkout set contrib/systemd/awww-daemon.service
 git checkout main
-mkdir ~/awww/contrib/systemd/ && cp -r ~/awww/contrib/systemd/awww-daemon.service ~/.config/systemd/user/
+mkdir ~/.config/systemd/user/ && cp -r ~/awww/contrib/systemd/awww-daemon.service ~/.config/systemd/user/
 systemctl daemon-reload
 
 systemctl --user enable awww-daemon.service
