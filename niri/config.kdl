@@ -274,6 +274,7 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
+spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "openrgb -p wap"
 spawn-sh-at-startup "waypaper --restore"
 // This line starts waybar, a commonly used bar for Wayland compositors.
@@ -393,6 +394,7 @@ window-rule {
 
 binds {
     // custom from dms
+    Mod+C hotkey-overlay-title="rofi clipboard menu" { spawn "sh" "-c" "cliphist list | rofi -dmenu | cliphist decode | wl-copy"; }
     Mod+W hotkey-overlay-title="rofi wifi menu" { spawn "sh" "-c" "iwmenu -l rofi"; }
     Mod+Shift+WheelScrollDown hotkey-overlay-title="Focus Workspace Down" { focus-workspace-down; }
     Mod+Shift+WheelScrollUp hotkey-overlay-title="Focus Workspace Up" { focus-workspace-up; }
