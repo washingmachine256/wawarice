@@ -8,5 +8,5 @@ my personal niri rice for arch
   - rofi(Mod+d(with clipboard mode Mod+c))
 - mako
 - kitty
-  -zsh
-  -omz
+  - zsh
+  - omz
